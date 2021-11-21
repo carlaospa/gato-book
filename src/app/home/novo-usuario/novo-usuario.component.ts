@@ -41,6 +41,7 @@ export class NovoUsuarioComponent implements OnInit {
   }
 
   cadastrar() {
+
     if (this.novoUsuarioForm.valid) {
       const novoUsuario = this.novoUsuarioForm.getRawValue() as NovoUsuario;
       this.novoUsuarioService.cadastraNovoUsuario(novoUsuario).subscribe(
